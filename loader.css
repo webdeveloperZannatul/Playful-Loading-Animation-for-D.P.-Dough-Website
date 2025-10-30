@@ -1,0 +1,38 @@
+/* D.P. Dough Animated Loader */
+/* --------------------------- */
+/* Brand Colors: Red #E42313, Black #000, White #fff */
+
+body {
+  margin: 0;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.loader {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.car {
+  position: absolute;
+  bottom: 0;
+  left: -20%;
+  width: 200px;
+  /*animation: driveScene 8s ease-in-out infinite;*/
+ animation: drive 8s linear infinite;
+}
+
+@keyframes drive {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(120vw);
+  }
+}
